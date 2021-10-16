@@ -1,4 +1,4 @@
-package com.Trycloud.utilities;
+package java.com.Trycloud.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

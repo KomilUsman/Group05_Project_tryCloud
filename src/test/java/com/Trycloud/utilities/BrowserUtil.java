@@ -1,4 +1,4 @@
-package java.com.Trycloud.utilities;
+package com.Trycloud.utilities;
 
 public class BrowserUtil {
 

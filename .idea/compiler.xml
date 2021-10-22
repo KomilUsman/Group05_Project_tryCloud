@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="group05_project_tryCloud" />
+        <module name="tryCloudAutomation" />
       </profile>
     </annotationProcessing>
   </component>

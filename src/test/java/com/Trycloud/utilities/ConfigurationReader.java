@@ -1,4 +1,4 @@
-package java.com.Trycloud.utilities;
+package com.Trycloud.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -12,7 +12,7 @@ public class ConfigurationReader {
     static {
 
         try {
-            FileInputStream in = new FileInputStream("configuration.properties");
+            FileInputStream in = new FileInputStream("config.properties");
             properties.load(in);
             in.close();
         } catch (IOException e) {

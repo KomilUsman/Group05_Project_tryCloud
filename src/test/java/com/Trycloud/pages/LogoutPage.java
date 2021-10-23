@@ -1,10 +1,10 @@
-package java.com.Trycloud.pages;
+package com.Trycloud.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.com.Trycloud.utilities.Driver;
+import com.Trycloud.utilities.Driver;
 
 public class LogoutPage {
 

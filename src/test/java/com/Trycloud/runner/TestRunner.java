@@ -1,4 +1,4 @@
-package java.com.Trycloud.runner;
+package com.Trycloud.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

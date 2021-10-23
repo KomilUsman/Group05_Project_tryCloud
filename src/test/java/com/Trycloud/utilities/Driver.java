@@ -1,4 +1,4 @@
-package java.com.Trycloud.utilities;
+package com.Trycloud.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -13,7 +13,7 @@ public class Driver {
 
     public static WebDriver getDriver() {
 
-        String browserName = java.com.Trycloud.utilities.ConfigurationReader.read("browser");
+        String browserName = com.Trycloud.utilities.ConfigurationReader.read("browser");
 
         if (obj == null) {
 

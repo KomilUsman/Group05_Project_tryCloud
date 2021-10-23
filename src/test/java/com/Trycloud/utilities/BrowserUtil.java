@@ -16,6 +16,16 @@ public class BrowserUtil {
         }
     }
 
+    public static List<String> getElementsText(List<WebElement> list){
+        List<String> elemTexts = new ArrayList<>();
+        for (WebElement el : list) {
+            elemTexts.add(el.getAttribute("innerHTML").trim());
+        }
+        return elemTexts;
+    }
+
+
+
     public static List<String> getAllText(List<WebElement> listOfWebElements){
 
         List<String> allTextList=new ArrayList<>();
@@ -26,4 +36,6 @@ public class BrowserUtil {
 
         return allTextList;
     }
+
+
 }

@@ -30,7 +30,7 @@ public class Userstory_02 {
     @Then("Verify user see the following modules")
     public void verify_user_see_the_following_modules(List<String> expectedResult) {
 
-        List<String> actualModules = BrowserUtil.getAllText(new DashboardPage().allModules);
+        List<String> actualModules = BrowserUtil.getElementsText(new DashboardPage().allModules);
 
         Assert.assertEquals(expectedResult, actualModules);
 

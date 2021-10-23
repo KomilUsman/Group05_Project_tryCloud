@@ -1,4 +1,4 @@
-package java.com.Trycloud.runner;
+package com.Trycloud.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target"},
         dryRun = false
-        , tags = "@ts and @ui"
+      //  , tags = "@ts and @ui"
 )
 
 public class TestRunner {

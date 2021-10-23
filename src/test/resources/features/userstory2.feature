@@ -4,7 +4,6 @@ Feature: As a user,
   Scenario:  verify users access to the main modules
     Given user is on homePage
     Then Verify user see the following modules
-      | main modules   |
       | Dashboard Desk |
       | Files          |
       | Photos         |

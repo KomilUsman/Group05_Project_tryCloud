@@ -4,7 +4,7 @@ Feature: As a user,
   Background:
     Given user is on login page
 
-
+  @wip
   Scenario Outline:  verify users access to the main modules
     When user enter with valid credentials "<username>" and "<password>"
     When user clicks login button
@@ -17,8 +17,7 @@ Feature: As a user,
       | Contacts  |
       | Circles   |
       | Calendar  |
-      | Deck      |
-      | More      |
+      | Desk      |
     Examples:
       | username | password    |
       | User5    | Userpass123 |

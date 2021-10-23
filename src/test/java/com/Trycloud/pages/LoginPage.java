@@ -28,13 +28,13 @@ public class LoginPage {
 
 
     public void goTo(){
-        Driver.getDriver().get(ConfigurationReader.read("login_url"));
+        Driver.getDriver().get(ConfigurationReader.read("url"));
     }
 
     public void login (String userNum){
 
-        usernameBox.sendKeys(ConfigurationReader.read(userNum + "_username"));
-        passwordBox.sendKeys(ConfigurationReader.read(userNum + "_password"));
+        usernameBox.sendKeys(ConfigurationReader.read(userNum ));
+        passwordBox.sendKeys(ConfigurationReader.read(userNum ));
         loginButton.click();
 
     }

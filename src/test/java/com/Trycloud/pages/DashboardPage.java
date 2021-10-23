@@ -22,6 +22,7 @@ public class DashboardPage {
     public void navigateToModule(String moduleName){
 
         Driver.getDriver().findElement(By.xpath("//ul[@id='appmenu']//span[normalize-space(.)='"+moduleName+"']/..")).click();
-    }
 
+
+    }
 }

@@ -5,7 +5,6 @@ Feature: As a user,
     Given user is on login page
 
 
-
   Scenario Outline:  verify users access to the main modules
     When user enter with valid credentials "<username>" and "<password>"
     When user clicks login button
@@ -15,18 +14,17 @@ Feature: As a user,
       | Photos    |
       | Activity  |
       | Talk      |
-      | Mail      |
       | Contacts  |
       | Circles   |
       | Calendar  |
-      | Desk      |
+      | Deck      |
       | More      |
-      Examples:
-        | username | password    |
-        | User5    | Userpass123 |
-        | User35   | Userpass123 |
-        | User65   | Userpass123 |
-        | User95   | Userpass123 |
+    Examples:
+      | username | password    |
+      | User5    | Userpass123 |
+      | User35   | Userpass123 |
+      | User65   | Userpass123 |
+      | User95   | Userpass123 |
 
 
 

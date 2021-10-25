@@ -11,14 +11,14 @@ import java.util.concurrent.TimeUnit;
 
 public class Hooks {
 
-    @Before()
+    @Before
     public void setupDriver(){
         System.out.println("This is from @Before inside hook class");
         com.Trycloud.utilities.Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
 
-    @After()
+    @After
     public void teardown(Scenario scenario){
 
         if(scenario.isFailed() ){

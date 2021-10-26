@@ -4,7 +4,7 @@ Feature: As a user,
   Background:
     Given user is on login page
 
-  @wip
+  @us_02
   Scenario Outline:  verify users access to the main modules
     When user enter with valid credentials "<username>" and "<password>"
     When user clicks login button

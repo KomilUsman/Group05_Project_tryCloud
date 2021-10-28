@@ -1,17 +1,29 @@
 Feature: As a user,
   I should be access all the main modules of the app.
 
-  Scenario:  verify users access to the main modules
-    Given user is on homePage
+  Background:
+    Given user is on login page
+
+  @us_02
+  Scenario Outline:  verify users access to the main modules
+    When user enter with valid credentials "<username>" and "<password>"
+    When user clicks login button
     Then Verify user see the following modules
-      | main modules   |
-      | Dashboard Desk |
-      | Files          |
-      | Photos         |
-      | Activity       |
-      | Talk           |
-      | Contacts       |
-      | Circles        |
-      | Calendar       |
-      | Desk           |
+      | Dashboard |
+      | Files     |
+      | Photos    |
+      | Activity  |
+      | Talk      |
+      | Contacts  |
+      | Circles   |
+      | Calendar  |
+      | Desk      |
+    Examples:
+      | username | password    |
+      | User5    | Userpass123 |
+      | User35   | Userpass123 |
+      | User65   | Userpass123 |
+      | User95   | Userpass123 |
+
+
 

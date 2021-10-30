@@ -26,6 +26,20 @@ public class FilesPage {
     @FindBy(xpath = "//label[@for='select-files-8993']")
     public WebElement secondCheckBox;
 
+    @FindBy(xpath = "//li/a[.='Deleted files']")
+    public WebElement deletedFiles;
+
+    @FindBy(xpath = "(//tbody[@id='fileList'])[12]//tr//span[@class='nametext extra-data']/span[@class='innernametext']")
+    public List<WebElement> deletedFileNames;
+
+    @FindBy(xpath = "//div/h2[.='No deleted files']")
+    public List<WebElement> verificationDeletedFiles;
+
+    @FindBy(xpath = "//*[@id=\"emptycontent\"]/h2")
+    //@FindBy(id = "icon-delete")
+    public WebElement noDeletedFiles;
+
+
     public FilesPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }

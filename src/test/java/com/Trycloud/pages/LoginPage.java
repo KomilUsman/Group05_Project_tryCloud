@@ -42,6 +42,7 @@ public class LoginPage {
     public void login (String username, String password){
         usernameBox.sendKeys(username);
         passwordBox.sendKeys(password);
+
     }
 
 }

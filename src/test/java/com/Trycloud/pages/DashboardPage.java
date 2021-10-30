@@ -19,6 +19,7 @@ public class DashboardPage {
     @FindBy(xpath = "//ul[@id='appmenu']//span")
     public List<WebElement> allModules;
 
+
     public void navigateToModule(String moduleName){
 
         Driver.getDriver().findElement(By.xpath("//ul[@id='appmenu']//span[normalize-space(.)='"+moduleName+"']/..")).click();

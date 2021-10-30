@@ -49,8 +49,8 @@ public class Userstory_03 {
     public void verifyAllFilesAreSelected() {
 
 
-       assertTrue(new FilesPage().firstCheckBox.isSelected());
-       assertTrue( new FilesPage().secondCheckBox.isSelected() );
+       assertTrue(new FilesPage().firstCheckBox.isEnabled());
+       assertTrue( new FilesPage().secondCheckBox.isEnabled() );
 
     }
 

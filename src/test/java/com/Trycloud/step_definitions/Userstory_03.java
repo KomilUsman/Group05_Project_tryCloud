@@ -9,8 +9,8 @@ import io.cucumber.java.en.When;
 import org.apache.hc.core5.util.Asserts;
 import org.junit.Assert;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class Userstory_03 {
 

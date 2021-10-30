@@ -21,6 +21,7 @@ public class Driver {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     obj = new ChromeDriver();
+                    obj.manage().window().maximize();
                     break;
 
                 case "firefox":

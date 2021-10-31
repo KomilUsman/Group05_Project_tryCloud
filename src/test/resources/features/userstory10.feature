@@ -13,7 +13,7 @@ Feature: As a user, I should be able to access to Files module.
     Examples:
       | username | password    |
       | User5    | Userpass123 |
-
+    @us_10
     Scenario Outline:
       When user enters login "<username>" and "<password>"
       Then user clicks login button

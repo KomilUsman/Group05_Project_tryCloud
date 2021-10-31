@@ -16,7 +16,6 @@ public class FilesPage {
     @FindBy(xpath = "//a[@class='name']")
     public List<WebElement> twoFiles;
 
-
     @FindBy(xpath = "//th[@id='headerSelection' and @class='column-selection']")
     public WebElement topLeftCheckBox;
 
@@ -32,12 +31,21 @@ public class FilesPage {
     @FindBy(xpath = "(//tbody[@id='fileList'])[12]//tr//span[@class='nametext extra-data']/span[@class='innernametext']")
     public List<WebElement> deletedFileNames;
 
-    @FindBy(xpath = "//div/h2[.='No deleted files']")
-    public List<WebElement> verificationDeletedFiles;
+    @FindBy(xpath = "//*[@id=\"app-settings-header\"]/button")
+    public WebElement settingsBtn;
 
-    @FindBy(xpath = "//*[@id=\"emptycontent\"]/h2")
-    //@FindBy(id = "icon-delete")
-    public WebElement noDeletedFiles;
+    @FindBy(css = "#files-setting-richworkspace")
+    public WebElement showRichByCss;
+
+    @FindBy(css = "#quota")
+    public WebElement storageBeforeUpload;
+
+    @FindBy(css = ".button.new")
+    public WebElement plusIconBtn;
+
+    @FindBy(css = "label.menuitem > span:nth-child(2)")
+    public WebElement uploadFile;
+
 
 
     public FilesPage(){

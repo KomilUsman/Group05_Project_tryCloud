@@ -34,7 +34,7 @@ public class Userstory_07 {
         //deletedFileArray.addAll(Arrays.asList(filesPage.deletedFileList));
         //System.out.println("filesPage.verificationDeletedFileList.size() = " + filesPage.verificationDeletedFiles.size());
 
-        Assert.assertNotEquals(filesPage.deletedFileNames.size(),0);
+        Assert.assertNotEquals(filesPage.deletedFileNames.size(), 0);
         //try {
         //    Assert.assertFalse(filesPage.noDeletedFiles.isDisplayed());
         //}

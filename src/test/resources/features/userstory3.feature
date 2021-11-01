@@ -14,6 +14,9 @@ Feature: Access to Files module
     Examples:
       | username | password    |
       | User5    | Userpass123 |
+      | User35   | Userpass123 |
+      | User65   | Userpass123 |
+      | User95   | Userpass123 |
 
   @us_03
     Scenario Outline:verify users can select all the uploaded files from the page
@@ -25,3 +28,6 @@ Feature: Access to Files module
       Examples:
         | username | password    |
         | User5    | Userpass123 |
+        | User35   | Userpass123 |
+        | User65   | Userpass123 |
+        | User95   | Userpass123 |

@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target"},
         dryRun = false
-      , tags = "@us_03"
+      , tags = "@us_10"
 )
 
 public class TestRunner {

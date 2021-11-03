@@ -2,6 +2,11 @@ package com.Trycloud.step_definitions;
 
 import com.Trycloud.pages.FilesPage;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class Userstory_06 {
 
@@ -19,16 +24,17 @@ public class Userstory_06 {
 
     @Then("user creates a folder name")
     public void userCreatesAFolderName() {
-        filesPage.newFolderName.sendKeys("NEW FOLDER");
+        filesPage.newFolderName.sendKeys("NEW FOLDER2");
     }
 
     @Then("user clicks “Submit“ icon")
     public void userClicksSubmitIcon() {
-        filesPage.submitFolder.click();
+        filesPage.submitFolder.submit();
     }
 
     @Then("the folder is displayed on the page")
     public void theFolderIsDisplayedOnThePage() {
-
+        System.out.println(filesPage.folderTable.findElement(By.partialLinkText("NEW FOLDER2")).getText());
+    Assert.assertEquals("NEW FOLDER2", filesPage.folderTable.findElement(By.partialLinkText("NEW FOLDER2")).getText());
     }
 }

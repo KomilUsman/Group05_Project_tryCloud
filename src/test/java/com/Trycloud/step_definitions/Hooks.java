@@ -18,7 +18,7 @@ public class Hooks {
 
     }
 
-    @After
+   /* @After
     public void teardown(Scenario scenario){
 
         if(scenario.isFailed() ){
@@ -34,5 +34,5 @@ public class Hooks {
         com.Trycloud.utilities.Driver.closeBrowser();
 
     }
-
+*/
 }

@@ -40,7 +40,7 @@ public class Userstory_10 {
         BrowserUtil.waitFor(2);
         filesPage.uploadFile.click();
 
-        String path = "/Users/altanochir./Desktop/file.jpeg";
+        String path = "/Users/altanochir./Desktop/Screen Shot 2021-11-03 at 6.08.43 PM.png";
         filesPage.uploadFile.sendKeys(path);
         BrowserUtil.waitFor(3);
 

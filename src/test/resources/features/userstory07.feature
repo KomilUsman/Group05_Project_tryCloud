@@ -8,8 +8,8 @@ Feature: As a user, I should be able to delete a file / folder.
     When user enters login "<username>" and "<password>"
     Then user clicks login button
     Then user arrives on dashboard page
-
     Then user go to files page
+
     Then user clicks delete files option
     Then user verifies deleted file is displayed on the page
     Examples:

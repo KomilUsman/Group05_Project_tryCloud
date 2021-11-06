@@ -46,6 +46,9 @@ public class FilesPage {
     @FindBy(css = "label.menuitem > span:nth-child(2)")
     public WebElement uploadFile;
 
+    @FindBy(xpath = "//*[@id=\"fileList\"]/tr[1]/td[2]/a")
+    public WebElement favoritesfolder;
+
 
 
     public FilesPage(){

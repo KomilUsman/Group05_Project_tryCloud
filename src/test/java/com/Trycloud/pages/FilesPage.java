@@ -50,12 +50,19 @@ public class FilesPage {
     public WebElement favoritesfolder;
 
 
+    @FindBy(xpath = "//*[@id=\"rightClickMenu\"]/ul/li[1]/a/span[2]")
+    public WebElement removeFavorite;
 
-    public FilesPage(){
+    @FindBy(css = "#app-navigation > ul > li.nav-favorites.ui-droppable.collapsible > a")
+    public WebElement favoriteModule;
+
+    @FindBy(xpath = "//div/h2[.='No favorites yet']")
+    public WebElement verifyFavoriteRemoved;
+
+
+    public FilesPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-
-
 
 
 }

@@ -60,7 +60,7 @@ public class FilesPage {
     @FindBy (id="fileList")
     public WebElement folderTable;
 
-    public FilesPage(){
+
 
     public FilesPage() {
 

@@ -42,7 +42,7 @@ public class Userstory_10 {
         BrowserUtil.waitFor(2);
         filesPage.uploadFile.click();
 
-        String path = "C:\\Users\\MSI\\Desktop\\GroupProject\\group05_project_tryCloud1\\src\\test\\java\\com\\Trycloud\\ExtraFiles\\marketmore-cucumber.jpg";
+
         filesPage.uploadFile.sendKeys(path);
         BrowserUtil.waitFor(3);
 

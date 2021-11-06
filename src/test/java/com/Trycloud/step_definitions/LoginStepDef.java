@@ -17,9 +17,11 @@ public class LoginStepDef {
     }
 
     @When("user enters login {string} and {string}")
-    public void user_enters_login(String username,String password){
+    public void user_enters_login(String username,String password) throws InterruptedException {
         loginPage.login(username,password);
+        Thread.sleep(2000);
     }
+
 
     @When("user clicks login button")
     public void user_clicks_login_button(){

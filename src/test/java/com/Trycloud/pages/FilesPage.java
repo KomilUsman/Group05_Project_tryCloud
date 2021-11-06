@@ -43,16 +43,12 @@ public class FilesPage {
     @FindBy(css = ".button.new")
     public WebElement plusIconBtn;
 
-    @FindBy(css = "label.menuitem > span:nth-child(2)")
+        @FindBy(css = "label.menuitem > span:nth-child(2)")
     public WebElement uploadFile;
 
-
-
-    public FilesPage(){
+    public FilesPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-
-
 
 
 }

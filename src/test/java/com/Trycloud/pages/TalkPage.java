@@ -28,6 +28,8 @@ public class TalkPage {
     @FindBy(xpath = "//*[@id=\"app-content-vue\"]/div/div[2]/div[3]/div/form/button")
     public WebElement submitBtn;
 
-@FindBy()
-    public WebElement verifyTheMsg;
+    @FindBy(xpath = "//div[@class='message__main__text']")
+    public List<WebElement> allMessages;
+
+
 }

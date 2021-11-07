@@ -40,11 +40,11 @@ public class Userstory_10 {
     public void userUploadFile() {
         filesPage.plusIconBtn.click();
 
-        BrowserUtil.waitFor(2);
-        filesPage.uploadFile.click();
+        //BrowserUtil.waitFor(2);
+        //filesPage.uploadFile.click();
 
-        String path = "/Users/altanochir./Desktop/Screen Shot 2021-11-03 at 6.08.43 PM.png";
-        filesPage.uploadFile.sendKeys(path);
+        String path = "/Users/altanochir./IdeaProjects/group05_project_tryCloud/src/test/java/com/Trycloud/ExtraFiles/marketmore-cucumber.jpg";
+        filesPage.uploadFile1.sendKeys(path);
         BrowserUtil.waitFor(3);
 
     }

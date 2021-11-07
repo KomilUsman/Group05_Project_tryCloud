@@ -43,7 +43,7 @@ public class FilesPage {
     @FindBy(css = ".button.new")
     public WebElement plusIconBtn;
 
-        @FindBy(css = "label.menuitem > span:nth-child(2)")
+    @FindBy(css = "label.menuitem > span:nth-child(2)")
     public WebElement uploadFile;
 
 
@@ -60,6 +60,8 @@ public class FilesPage {
     @FindBy (id="fileList")
     public WebElement folderTable;
 
+    @FindBy(css = "#file_upload_start")
+    public WebElement uploadFile1;
 
 
     public FilesPage() {

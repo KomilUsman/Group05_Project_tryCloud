@@ -5,24 +5,19 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-
 import java.util.ArrayList;
 
-
-public class UserStory14 {
+public class UserStory_14 {
 
     ArrayList<String> ar = new ArrayList<>();
     Magnifier_Icon magnifier_icon = new Magnifier_Icon();
-
     String file = "cucumber.jpg", folder = "NEW FOLDER2", user = "User11";
 
     @When("User click magnifier icon on the right top")
     public void click_magnifier_icon_on_the_right_top() {
         magnifier_icon.SearchBtn.click();
 
-
     }
-
 
     @Then("Search any existing file,folder,user name")
     public void search_any_existing_file_folder_user_name() throws InterruptedException {

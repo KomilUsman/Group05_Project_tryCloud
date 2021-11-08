@@ -66,8 +66,8 @@ public class userStory_11 {
 
     @Then("Verify the message is displayed on the conversation log")
     public void verify_the_message_is_displayed_on_the_conversation_log() throws InterruptedException {
-                                                // == 15
-        String actualMsg = talkPage.allMessages.get(talkPage.allMessages.size()-1).getText();
+        // == 15
+        String actualMsg = talkPage.allMessages.get(talkPage.allMessages.size() - 1).getText();
 
         System.out.println("actualMsg = " + actualMsg);
         System.out.println("expectedMsg = " + expectedMsg);

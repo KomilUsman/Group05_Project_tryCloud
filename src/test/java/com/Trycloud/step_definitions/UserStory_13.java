@@ -11,7 +11,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 
-public class UserStory_13_StepDef {
+public class UserStory_13 {
     LoginPage loginPage = new LoginPage();
     ContactsPage contactsPage = new ContactsPage();
 

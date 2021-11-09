@@ -29,6 +29,7 @@ public class Userstory_10 {
 
     }
 
+        String path = "Give file path here ";
 
     @When("user check the current storage")
     public void userCheckTheCurrentStorage() {

@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class LoginStepDef {
+public class userStory_01 {
     LoginPage loginPage = new LoginPage();
 
     @Given("user is on login page")

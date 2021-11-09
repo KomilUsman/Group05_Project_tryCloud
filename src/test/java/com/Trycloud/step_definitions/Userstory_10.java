@@ -44,6 +44,7 @@ public class Userstory_10 {
         //BrowserUtil.waitFor(2);
         //filesPage.uploadFile.click();
 
+        String pics = "/Users/altanochir./IdeaProjects/group05_project_tryCloud/src/test/java/com/Trycloud/ExtraFiles/SW-App-Blog2.jpeg";
         String path = "/Users/altanochir./IdeaProjects/group05_project_tryCloud/src/test/java/com/Trycloud/ExtraFiles/marketmore-cucumber.jpg";
         filesPage.uploadFile1.sendKeys(path);
         BrowserUtil.waitFor(3);

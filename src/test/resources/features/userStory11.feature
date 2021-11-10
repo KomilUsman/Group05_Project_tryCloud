@@ -13,3 +13,4 @@ Feature: As a user, I should be able to access to Talks module.
     And Write a message
     And Click submit button
     Then Verify the message is displayed on the conversation log
+

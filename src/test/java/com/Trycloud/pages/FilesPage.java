@@ -43,7 +43,7 @@ public class FilesPage {
     @FindBy(css = ".button.new")
     public WebElement plusIconBtn;
 
-        @FindBy(css = "label.menuitem > span:nth-child(2)")
+        @FindBy(css = "#file_upload_start")
     public WebElement uploadFile;
 
     public FilesPage() {

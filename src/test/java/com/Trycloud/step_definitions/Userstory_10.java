@@ -29,7 +29,6 @@ public class Userstory_10 {
 
     }
 
-        String path = "Give file path here ";
 
     @When("user check the current storage")
     public void userCheckTheCurrentStorage() {
@@ -40,9 +39,8 @@ public class Userstory_10 {
     public void userUploadFile() {
         filesPage.plusIconBtn.click();
 
-        BrowserUtil.waitFor(2);
-        filesPage.uploadFile.click();
 
+        String path = "C:\\Users\\MSI\\IdeaProjects\\group05_project_tryCloudRealOne\\src\\test\\resources\\FilesToUpload\\Cucumber.jpg";
 
         filesPage.uploadFile.sendKeys(path);
         BrowserUtil.waitFor(3);

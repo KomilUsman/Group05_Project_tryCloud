@@ -43,16 +43,11 @@ public class FilesPage {
     @FindBy(css = ".button.new")
     public WebElement plusIconBtn;
 
-    @FindBy(css = "label.menuitem > span:nth-child(2)")
-    public WebElement uploadFile;
-
-
     @FindBy (xpath = "//*[@id=\"controls\"]/div[2]/div[2]/ul/li[2]/a/span[2]")
     public WebElement newFolder;
 
     @FindBy (id= "view13-input-folder")
     public WebElement newFolderName;
-
 
     @FindBy (xpath = "//*[@id=\"controls\"]/div[2]/div[2]/ul/li[2]/a/form/input[2]")
     public WebElement submitFolder;

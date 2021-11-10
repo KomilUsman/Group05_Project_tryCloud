@@ -1,6 +1,4 @@
-Feature: As a user, I should be able to delete a file / folder.
-
-
+Feature: As a user, I should be able to access to Files module.
   Background:
     Given user is on login page
 
@@ -9,13 +7,12 @@ Feature: As a user, I should be able to delete a file / folder.
     Then user clicks login button
     Then user arrives on dashboard page
     Then user go to files page
+    Then user clicks the “+” icon on top
+    Then user clicks “New Folder”
+    Then user creates a folder name
+    Then user clicks “Submit“ icon
+    Then the folder is displayed on the page
 
-    Then user clicks delete files option
-    Then user verifies deleted file is displayed on the page
     Examples:
       | username | password    |
       | User5    | Userpass123 |
-      | User35   | Userpass123 |
-      | User65   | Userpass123 |
-      | User95   | Userpass123 |
-

@@ -41,9 +41,11 @@ public class Userstory_10 {
         filesPage.plusIconBtn.click();
         BrowserUtil.waitFor(5);
 
+
         String path = "C:\\Users\\MSI\\Desktop\\group05_project_tryCloud\\src\\test\\java\\com\\Trycloud\\ExtraFiles\\Screen Shot 2021-11-09 at 8.02.45 PM.png";
         filesPage.uploadFile1.sendKeys(path);
         BrowserUtil.waitFor(5);
+
 
 
     }

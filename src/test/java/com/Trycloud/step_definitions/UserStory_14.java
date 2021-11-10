@@ -1,10 +1,10 @@
 package com.Trycloud.step_definitions;
 
-import com.Trycloud.pages.LoginPage;
+
 import com.Trycloud.pages.Magnifier_Icon;
-import com.Trycloud.utilities.ConfigurationReader;
+
 import com.Trycloud.utilities.Driver;
-import io.cucumber.java.en.Given;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -16,12 +16,6 @@ public class UserStory_14 {
     ArrayList<String> ar = new ArrayList<>();
     Magnifier_Icon magnifier_icon = new Magnifier_Icon();
     String file = "cucumber.jpg", folder = "NEW FOLDER2", user = "User11";
-
-    @Given("user arrives on dasboard pages")
-    public void user_arrives_on_dashboard_pages() {
-        Driver.getDriver().get(ConfigurationReader.read("url"));
-        new LoginPage().loginNew();
-    }
 
     @When("User click magnifier icon on the right top")
     public void click_magnifier_icon_on_the_right_top() {
@@ -73,9 +67,15 @@ public class UserStory_14 {
                 System.out.println("-------------------------------");
                 Driver.closeBrowser();
             }
+
         }
 
     }
+
+    public void closing() {
+        Driver.closeBrowser();
+    }
+
 }
 
 

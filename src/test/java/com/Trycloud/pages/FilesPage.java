@@ -58,7 +58,6 @@ public class FilesPage {
     @FindBy(css = "#file_upload_start")
     public WebElement uploadFile1;
 
-
     public FilesPage() {
 
         PageFactory.initElements(Driver.getDriver(), this);

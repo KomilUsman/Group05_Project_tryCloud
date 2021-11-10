@@ -30,7 +30,6 @@ public class Userstory_10 {
 
     }
 
-        String path = "Give file path here ";
 
     @When("user check the current storage")
     public void userCheckTheCurrentStorage() {
@@ -38,12 +37,14 @@ public class Userstory_10 {
     }
 
     @And("user upload file")
-    public void userUploadFile() {
+    public void userUploadFile() throws InterruptedException {
         filesPage.plusIconBtn.click();
+        BrowserUtil.waitFor(5);
 
-        String path = "/Users/altanochir./IdeaProjects/group05_project_tryCloud/src/test/java/com/Trycloud/ExtraFiles/marketmore-cucumber.jpg";
+        String path = "C:\\Users\\MSI\\Desktop\\group05_project_tryCloud\\src\\test\\java\\com\\Trycloud\\ExtraFiles\\Screen Shot 2021-11-09 at 8.02.45 PM.png";
         filesPage.uploadFile1.sendKeys(path);
-        BrowserUtil.waitFor(3);
+        BrowserUtil.waitFor(5);
+
 
     }
 

@@ -30,7 +30,6 @@ public class Userstory_10 {
 
     }
 
-        String path = "Give file path here ";
 
     @When("user check the current storage")
     public void userCheckTheCurrentStorage() {
@@ -41,11 +40,12 @@ public class Userstory_10 {
     public void userUploadFile() {
         filesPage.plusIconBtn.click();
 
-        //BrowserUtil.waitFor(2);
-        //filesPage.uploadFile.click();
+
+
 
         String path = "/Users/altanochir./IdeaProjects/group05_project_tryCloud/src/test/java/com/Trycloud/ExtraFiles/marketmore-cucumber.jpg";
-        filesPage.uploadFile1.sendKeys(path);
+        filesPage.uploadFile.sendKeys(path);
+
         BrowserUtil.waitFor(3);
 
     }

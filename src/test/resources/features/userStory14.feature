@@ -2,8 +2,7 @@
 Feature: As a user, I should be able to access search any item/ users from the homepage.
 
   Background:
-    Given user arrives on dasboard pages
-
+    Given user arrives on dashboard pages
   Scenario: Verify users can search any files/folder/users from the search box.
 
     When User click magnifier icon on the right top

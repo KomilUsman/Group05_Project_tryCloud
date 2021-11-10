@@ -43,6 +43,7 @@ public class Userstory_10 {
 
 
 
+        String pics = "/Users/altanochir./IdeaProjects/group05_project_tryCloud/src/test/java/com/Trycloud/ExtraFiles/SW-App-Blog2.jpeg";
         String path = "/Users/altanochir./IdeaProjects/group05_project_tryCloud/src/test/java/com/Trycloud/ExtraFiles/marketmore-cucumber.jpg";
         filesPage.uploadFile.sendKeys(path);
 

@@ -2,7 +2,9 @@ package com.Trycloud.pages;
 
 import com.Trycloud.utilities.BrowserUtil;
 import com.Trycloud.utilities.Driver;
+
 import com.github.javafaker.Faker;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,8 +24,14 @@ public class ContactsPage {
     @FindBy(xpath = "//*[@id='appmenu']/li[6]")
     public WebElement contactsModule;
 
+
     @FindBy(xpath = "//*[@id=\"new-contact-button\"]")
     public WebElement newContactButton;
+
+    @FindBy(xpath = "//*[@id=\"everyone\"]/div/div[1]")
+    public WebElement allContactsCount;
+
+
 
     @FindBy(xpath = "//*[@id=\"everyone\"]/div/div[1]")
     public WebElement allContactsCount;
@@ -47,6 +55,7 @@ public class ContactsPage {
 
 
     }
+
 
     public static class newContactInfo {
 
@@ -116,5 +125,6 @@ public class ContactsPage {
 
         }
     }
+
 
 }

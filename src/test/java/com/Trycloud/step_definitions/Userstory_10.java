@@ -1,17 +1,20 @@
 package com.Trycloud.step_definitions;
 
-import com.Trycloud.pages.DashboardPage;
 import com.Trycloud.pages.FilesPage;
 import com.Trycloud.utilities.BrowserUtil;
 import com.Trycloud.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import sun.plugin.services.BrowserService;
 
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
+
 
 public class Userstory_10 {
 
@@ -37,13 +40,14 @@ public class Userstory_10 {
     public void userUploadFile() {
         filesPage.plusIconBtn.click();
 
-        BrowserUtil.waitFor(2);
-        filesPage.uploadFile.click();
 
-        String path = "/Users/altanochir./Desktop/file.jpeg";
+
+
+        String pics = "/Users/altanochir./IdeaProjects/group05_project_tryCloud/src/test/java/com/Trycloud/ExtraFiles/SW-App-Blog2.jpeg";
+        String path = "/Users/altanochir./IdeaProjects/group05_project_tryCloud/src/test/java/com/Trycloud/ExtraFiles/marketmore-cucumber.jpg";
         filesPage.uploadFile.sendKeys(path);
-        BrowserUtil.waitFor(3);
 
+        BrowserUtil.waitFor(3);
 
     }
 

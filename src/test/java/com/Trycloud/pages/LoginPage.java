@@ -38,12 +38,6 @@ public class LoginPage {
         loginButton.click();
 
     }
-    //Komil created login page
-    public void loginNew(){
-        usernameBox.sendKeys(ConfigurationReader.read("user5_username" ));
-        passwordBox.sendKeys(ConfigurationReader.read("user5_password" ));
-        loginButton.click();
-    }
 
     public void login (String username, String password){
         usernameBox.sendKeys(username);

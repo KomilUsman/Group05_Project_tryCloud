@@ -10,5 +10,8 @@
         <module name="tryCloudAutomation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="group05_project_tryCloud" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

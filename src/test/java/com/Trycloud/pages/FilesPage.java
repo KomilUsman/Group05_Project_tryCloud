@@ -46,6 +46,12 @@ public class FilesPage {
     @FindBy(css = "label.menuitem > span:nth-child(2)")
     public WebElement uploadFile;
 
+    @FindBy(xpath = "//ul[@id='appmenu']//a[@aria-label='Contacts']")
+    public WebElement contactButton;
+
+
+
+
 
 
     public FilesPage(){

@@ -65,7 +65,7 @@ public class UserStory_14 {
                 System.out.println("ExpectedResult " + user);
                 System.out.println("ActualResult " + ar.get(i));
                 System.out.println("-------------------------------");
-
+                Driver.closeBrowser();
             }
 
         }

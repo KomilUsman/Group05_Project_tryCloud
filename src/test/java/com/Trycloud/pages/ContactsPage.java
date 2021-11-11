@@ -33,8 +33,6 @@ public class ContactsPage {
 
 
 
-    @FindBy(xpath = "//*[@id=\"everyone\"]/div/div[1]")
-    public WebElement allContactsCount;
 
 
     public boolean checkContactsNum() {

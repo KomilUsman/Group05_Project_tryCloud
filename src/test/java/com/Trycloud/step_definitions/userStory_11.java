@@ -21,7 +21,7 @@ public class userStory_11 {
     @Given("user arrives on dashboard pages")
     public void user_arrives_on_dashboard_pages() {
         Driver.getDriver().get(ConfigurationReader.read("url"));
-        new LoginPage().loginNew();
+        new LoginPage().login(ConfigurationReader.read("user5_username"), ConfigurationReader.read("user5_password"));
     }
 
 

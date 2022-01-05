@@ -1,3 +1,4 @@
+@test @ui @smoke
 Feature: As a user I should be able to login with valid credentials
 
 

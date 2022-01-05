@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="trycloud-automation-group2-b23" />
         <module name="group05_project_tryCloud" />
         <module name="tryCloudAutomation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="group05_project_tryCloud" target="8" />
+      <module name="trycloud-automation-group2-b23" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
